@@ -6,7 +6,7 @@
 /*   By: user42 <pnielly@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/25 15:01:45 by user42            #+#    #+#             */
-/*   Updated: 2021/07/04 11:41:32 by user42           ###   ########.fr       */
+/*   Updated: 2021/07/04 11:43:08 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void	ft_send(int pid, char *msg)
 
 void	ft_success(pid_t sig)
 {
+	(void)sig;
 	ft_putstr_endl("Data has been received.");
 }
 
